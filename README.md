@@ -1,1 +1,1 @@
-This md file is a sample.
+This is a file.
