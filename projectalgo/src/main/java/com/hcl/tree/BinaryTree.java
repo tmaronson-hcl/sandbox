@@ -7,6 +7,13 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.Stack;
 
+/*
+ * Adapted from https://www.baeldung.com/java-binary-tree. Added
+ * tests and some other features. Author used a lot of published
+ * code found somewhere. This cannot change much from various
+ * examples because binary tree code and other algorithms are common.
+ */
+
 public class BinaryTree {
 	
 	private Node root;
