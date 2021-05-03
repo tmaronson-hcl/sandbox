@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.hcl.tree.DataStructuresTests" time="0.04" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.hcl.tree.DataStructuresTests" time="0.112" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_281\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\THOMAS~1.ARO\AppData\Local\Temp\surefire3126943788492984912\surefirebooter4846771773840422762.jar C:\Users\thomas.aronson\AppData\Local\Temp\surefire3126943788492984912 2021-04-28T20-47-04_040-jvmRun1 surefire1262341273678864617tmp surefire_07088618035463103099tmp"/>
+    <property name="sun.java.command" value="C:\Users\THOMAS~1.ARO\AppData\Local\Temp\surefire6388206218381330874\surefirebooter3567810466370983573.jar C:\Users\thomas.aronson\AppData\Local\Temp\surefire6388206218381330874 2021-04-29T12-49-14_215-jvmRun1 surefire5986028926784995806tmp surefire_07255749276717763216tmp"/>
     <property name="surefire.test.class.path" value="C:\Users\thomas.aronson\GIT\sandbox\projectalgo\target\test-classes;C:\Users\thomas.aronson\GIT\sandbox\projectalgo\target\classes;C:\Users\thomas.aronson\.m2\repository\org\junit\jupiter\junit-jupiter\5.7.0\junit-jupiter-5.7.0.jar;C:\Users\thomas.aronson\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.0\junit-jupiter-api-5.7.0.jar;C:\Users\thomas.aronson\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\thomas.aronson\.m2\repository\org\junit\platform\junit-platform-commons\1.7.0\junit-platform-commons-1.7.0.jar;C:\Users\thomas.aronson\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.7.0\junit-jupiter-params-5.7.0.jar;C:\Users\thomas.aronson\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.0\junit-jupiter-engine-5.7.0.jar;C:\Users\thomas.aronson\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\thomas.aronson\.m2\repository\org\junit\platform\junit-platform-engine\1.7.0\junit-platform-engine-1.7.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\thomas.aronson"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\THOMAS~1.ARO\AppData\Local\Temp\surefire3126943788492984912\surefirebooter4846771773840422762.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\THOMAS~1.ARO\AppData\Local\Temp\surefire6388206218381330874\surefirebooter3567810466370983573.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_281\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_281\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -60,10 +60,10 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="testInOrderTraversalOfTreeWithoutRecursion" classname="com.hcl.tree.DataStructuresTests" time="0.027"/>
-  <testcase name="testBreadthFirstTraversalOfTree" classname="com.hcl.tree.DataStructuresTests" time="0"/>
-  <testcase name="testPreOrderTraversalOfTree" classname="com.hcl.tree.DataStructuresTests" time="0.001"/>
-  <testcase name="testPostOrderTraversalOfTree" classname="com.hcl.tree.DataStructuresTests" time="0.001"/>
-  <testcase name="testInOrderTraversalOfTree" classname="com.hcl.tree.DataStructuresTests" time="0.003"/>
-  <testcase name="givenABinaryTreeWhenAddingElementsTestForThoseElements" classname="com.hcl.tree.DataStructuresTests" time="0.002"/>
+  <testcase name="testInOrderTraversalOfTreeWithoutRecursion" classname="com.hcl.tree.DataStructuresTests" time="0.057"/>
+  <testcase name="testBreadthFirstTraversalOfTree" classname="com.hcl.tree.DataStructuresTests" time="0.005"/>
+  <testcase name="testPreOrderTraversalOfTree" classname="com.hcl.tree.DataStructuresTests" time="0.004"/>
+  <testcase name="testPostOrderTraversalOfTree" classname="com.hcl.tree.DataStructuresTests" time="0.009"/>
+  <testcase name="testInOrderTraversalOfTree" classname="com.hcl.tree.DataStructuresTests" time="0.004"/>
+  <testcase name="givenABinaryTreeWhenAddingElementsTestForThoseElements" classname="com.hcl.tree.DataStructuresTests" time="0.007"/>
 </testsuite>

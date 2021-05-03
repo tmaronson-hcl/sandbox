@@ -16,21 +16,25 @@ import java.util.Stack;
 
 public class BinaryTree {
 	
+	//private int i;
 	private Node root;
 	private List<Integer> list = new ArrayList<>();
 	
+	/*
+	 * Example of one type of inner class. Non-static inner class.
+	 */
 	class Node {
 	    int value;
 	    Node left;
 	    Node right;
+	    
 
 	    Node(int value) {
 	        this.value = value;
 	        right = null;
 	        left = null;
-	    }
-	    
-	    
+	        //i = 6;
+	    }	    
 	}
 	
 	
@@ -170,6 +174,7 @@ public class BinaryTree {
 	    return list;
 	}
 	
+	// breadth first search
 	public List<Node> traverseLevelOrder() {
 	    if (root == null) {
 	        return null;
