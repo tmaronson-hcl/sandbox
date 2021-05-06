@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Configuration status="debug">
+    <Appenders>
+    <Console name="console" target="SYSTEM_OUT">
+        <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n" />
+    </Console>
+
+    <File name="file" fileName="./logs/sample1.log">
+        <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n" />
+    </File>
+    </Appenders>
+
+    <!-- additivity has to do with hierarchy with root logger.
+    additivity="true" means will take root logger also. -->
+    <Loggers>
+     <Logger name="com.hcl" level="warn" additivity="true">
+          <AppenderRef ref="console" />
+     </Logger>
+
+    <Root level="DEBUG" >
+        <AppenderRef ref="console" />
+        <AppenderRef ref="file" />
+    </Root>
+    </Loggers>
+</Configuration>
