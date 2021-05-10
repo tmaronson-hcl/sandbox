@@ -6,7 +6,7 @@ import org.apache.logging.log4j.Logger;
 import java.util.Objects;
 import java.util.function.Predicate;
 
-public class Person<T> {
+public class Person {
 
 
     private String name;
@@ -107,9 +107,7 @@ public class Person<T> {
         logger.warn ("Values for p1, p2, p3: " + p1 + p2 + p3);
         logger.warn (test);
 
-        // Access generic form - can use any class.
-        new Person("Bob", 225, "M", 78).figureInfo2 (p1, personPredicate);
-
+        
     }
 
     public static void figureInfo(Person person, Predicate<Person> p) {
@@ -117,10 +115,7 @@ public class Person<T> {
         //System.out.println (p.test (person));
     }
 
-    public void figureInfo2(T obj, Predicate<T> p) {
-
-        //System.out.println (p.test (obj));
-    }
+    
 
 }
 
