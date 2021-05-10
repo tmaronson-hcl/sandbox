@@ -66,7 +66,7 @@ class PersonTest {
 
     @Test
     void testFigureInfo() {
-        // write laters
+        // write later
     }
 
     @ParameterizedTest
