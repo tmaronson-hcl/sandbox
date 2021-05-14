@@ -1,5 +1,6 @@
 package com.hcl.logging;
 
+import java.io.IOException;
 import java.util.Arrays;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -12,8 +13,11 @@ import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
+import com.hcl.java8.CalculatorMain;
+
 import java.util.Arrays;
 import java.util.List;
+import java.util.Properties;
 import java.util.stream.Stream;
 
 class PersonTest {
@@ -107,5 +111,18 @@ class PersonTest {
     void testHeightLessThanZeroException() {
         NumberFormatException nfe = assertThrows (NumberFormatException.class,
                 () -> new Person("Joe Gilly", 188, "M", -72));
+    }
+    
+    @Test
+    void testResourceAsStreamClasspathResolvesCorrectlyWithProperty() {
+    	Properties props = new Properties();
+     	try {
+			props.load(PersonTest.class.getClassLoader()
+					.getResourceAsStream("db.properties"));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+     	String user = props.getProperty("user");
+     	assertEquals(user, "billy");
     }
 }
