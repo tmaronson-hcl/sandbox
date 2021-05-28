@@ -32,14 +32,15 @@ public class JavaFactoryApiOthers {
 		 * We could use the API to read from STDIN, files for example without changing much
 		 * of the code. Now we can also use this for an URL.
 		 */
-		
 		URL url = new URL("https://www.ibm.com/us-en?ar=1"); // like Decorator pattern?
-		BufferedReader br = new BufferedReader(new InputStreamReader(url.openStream()));  // could use FileReader with BR, System.in
+		BufferedReader br = new BufferedReader(new InputStreamReader(url.openStream()));
+		  // could use FileReader with BR, System.in
 		String line = null;
 		while((line = br.readLine()) != null) {
 			System.out.println(line);
 			
 		}
+		br.close();
 	}
 
 	// factory pattern
