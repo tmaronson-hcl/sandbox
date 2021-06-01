@@ -2,7 +2,6 @@ package com.hcl.driver;
 
 import java.text.NumberFormat;
 
-import com.hcl.condiments.CondimentDecorator;
 import com.hcl.condiments.Milk;
 import com.hcl.condiments.Mocha;
 import com.hcl.condiments.Nuts;
