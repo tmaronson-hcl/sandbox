@@ -3,6 +3,7 @@ package com.hcl.java8;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.function.BinaryOperator;
 import java.util.stream.Collectors;
 
 public class FilterCount {
@@ -24,12 +25,16 @@ public class FilterCount {
 		 * 3. Method Collectors.groupBy(Function, Collector) returns Collector in param in #2.
 		 * 4. Function is Employee::getBand, Collectors.counting() method returns Collector for #3.
 		 */
-		Map<Character,Long> noOfMaleAndFemaleEmps=list.stream()
+		Map<Character, Long> noOfMaleAndFemaleEmps = list.stream()
 				.collect(
-				Collectors.groupingBy(Employee::getBand,Collectors.counting())
+				Collectors.groupingBy(Employee::getBand, Collectors.counting())
 				);
 		System.out.println(noOfMaleAndFemaleEmps);
 		
+		Double sumSalary = list.stream()
+				.collect(
+				Collectors.summingDouble(Employee::getSalary));
+		System.out.println(sumSalary);
 		
 		Long empSalGt3000 = list.stream()
 				.filter((var) -> var.getSalary() > 3000)

@@ -36,11 +36,12 @@ public class LambdaExpression {
 						p -> p.name, 
 						(name1, name2) -> name1 + ";" + name2));
 	          System.out.println(map);
-	          Arrays.asList("Arvind", "Aaron", "Anton", "Tony", "Vaishak", "Sheela")
+	          
+	          Arrays.asList("BArvind", "Aaron", "Bnton", "ATony", "Vaishak", "Sheela")
 	          .stream()
 	          .peek(System.out::println)
 	          // Look up allMatch(Predicate) and see why weird results may be returned.
-	          .allMatch(s -> s.startsWith("A"));
+	          .anyMatch(s -> s.startsWith("A"));
 	          
 	          System.out.println("This would be what we want to do more than likely");
 	          Arrays.asList("Arvind", "Aaron", "Anton", "Tony", "Vaishak", "Sheela")
