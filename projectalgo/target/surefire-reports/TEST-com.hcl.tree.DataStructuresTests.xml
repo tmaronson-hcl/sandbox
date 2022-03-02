@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.hcl.tree.DataStructuresTests" time="0.009" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.hcl.tree.DataStructuresTests" time="0.03" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_281\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\THOMAS~1.ARO\AppData\Local\Temp\surefire7836768397375974697\surefirebooter1840463980835628353.jar C:\Users\thomas.aronson\AppData\Local\Temp\surefire7836768397375974697 2021-05-13T14-12-04_768-jvmRun1 surefire9117349951818193042tmp surefire_05431191787619017771tmp"/>
+    <property name="sun.java.command" value="C:\Users\THOMAS~1.ARO\AppData\Local\Temp\surefire2307197664943508403\surefirebooter8629190749776996920.jar C:\Users\thomas.aronson\AppData\Local\Temp\surefire2307197664943508403 2021-12-10T13-52-00_904-jvmRun1 surefire4665158431359946437tmp surefire_07638058153684643927tmp"/>
     <property name="surefire.test.class.path" value="C:\Users\thomas.aronson\GIT\sandbox\projectalgo\target\test-classes;C:\Users\thomas.aronson\GIT\sandbox\projectalgo\target\classes;C:\Users\thomas.aronson\.m2\repository\org\junit\jupiter\junit-jupiter\5.7.0\junit-jupiter-5.7.0.jar;C:\Users\thomas.aronson\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.0\junit-jupiter-api-5.7.0.jar;C:\Users\thomas.aronson\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\thomas.aronson\.m2\repository\org\junit\platform\junit-platform-commons\1.7.0\junit-platform-commons-1.7.0.jar;C:\Users\thomas.aronson\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.7.0\junit-jupiter-params-5.7.0.jar;C:\Users\thomas.aronson\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.0\junit-jupiter-engine-5.7.0.jar;C:\Users\thomas.aronson\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\thomas.aronson\.m2\repository\org\junit\platform\junit-platform-engine\1.7.0\junit-platform-engine-1.7.0.jar;C:\Users\thomas.aronson\.m2\repository\org\apache\logging\log4j\log4j-api\2.14.1\log4j-api-2.14.1.jar;C:\Users\thomas.aronson\.m2\repository\org\apache\logging\log4j\log4j-core\2.14.1\log4j-core-2.14.1.jar;C:\Users\thomas.aronson\.m2\repository\org\mockito\mockito-all\2.0.2-beta\mockito-all-2.0.2-beta.jar;C:\Users\thomas.aronson\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\thomas.aronson\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\thomas.aronson"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\THOMAS~1.ARO\AppData\Local\Temp\surefire7836768397375974697\surefirebooter1840463980835628353.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\THOMAS~1.ARO\AppData\Local\Temp\surefire2307197664943508403\surefirebooter8629190749776996920.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_281\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_281\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -52,7 +52,7 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_281\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_281/bin/server;C:/Program Files/Java/jre1.8.0_281/bin;C:/Program Files/Java/jre1.8.0_281/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Windows\CCM;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\nodejs\;C:\Users\thomas.aronson\AppData\Local\Microsoft\WindowsApps;C:\Users\thomas.aronson\AppData\Local\Programs\Git\cmd;C:\Users\thomas.aronson\apache-tomcat-9.0.37\bin;C:\Users\thomas.aronson\node-v12.18.3-win-x64;C:\Users\thomas.aronson\apache-maven-3.6.3\bin;C:\Users\thomas.aronson\Java\jdk-14.0.2\bin;C:\Program Files\MySQL\MySQL Workbench 8.0 CE;C:\Users\thomas.aronson\apache-maven-3.6.3\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;&quot;C:\WINDOWS;C:\WINDOWS\System32\Wbem&quot;;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Windows\CCM;C:\Users\thomas.aronson\AppData\Local\Microsoft\WindowsApps;C:\Users\thomas.aronson\AppData\Local\Programs\Git\cmd;;C:\Users\thomas.aronson\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\thomas.aronson\eclipse;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_281\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_281/bin/server;C:/Program Files/Java/jre1.8.0_281/bin;C:/Program Files/Java/jre1.8.0_281/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Windows\CCM;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Windows\CCM;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\nodejs\;C:\Users\thomas.aronson\Anaconda3;C:\Users\thomas.aronson\AppData\Local\Microsoft\WindowsApps;C:\Users\thomas.aronson\AppData\Local\Programs\Git\cmd;C:\Users\thomas.aronson\apache-tomcat-9.0.37\bin;C:\Users\thomas.aronson\node-v12.18.3-win-x64;C:\Users\thomas.aronson\apache-maven-3.6.3\bin;C:\Users\thomas.aronson\Java\jdk-14.0.2\bin;C:\Program Files\MySQL\MySQL Workbench 8.0 CE;&quot;C:\WINDOWS;C:\WINDOWS\System32\Wbem&quot;;C:\Users\thomas.aronson\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\thomas.aronson\NodeJS\node-v12.18.3-win-x64\node-v12.18.3-win-x64;C:\Users\thomas.aronson\AppData\Roaming\npm;C:\Users\thomas.aronson\Anaconda3\pkgs\python-3.8.5-h5fd99cc_1\Lib\idlelib;C:\Users\thomas.aronson\AppData\Local\Turbo\Cmd\;C:\Users\thomas.aronson\eclipse;;."/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.version" value="25.281-b09"/>
@@ -60,10 +60,10 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="testInOrderTraversalOfTreeWithoutRecursion" classname="com.hcl.tree.DataStructuresTests" time="0.002"/>
+  <testcase name="testInOrderTraversalOfTreeWithoutRecursion" classname="com.hcl.tree.DataStructuresTests" time="0.005"/>
   <testcase name="testBreadthFirstTraversalOfTree" classname="com.hcl.tree.DataStructuresTests" time="0.001"/>
-  <testcase name="testPreOrderTraversalOfTree" classname="com.hcl.tree.DataStructuresTests" time="0.003"/>
-  <testcase name="testPostOrderTraversalOfTree" classname="com.hcl.tree.DataStructuresTests" time="0"/>
-  <testcase name="testInOrderTraversalOfTree" classname="com.hcl.tree.DataStructuresTests" time="0"/>
-  <testcase name="givenABinaryTreeWhenAddingElementsTestForThoseElements" classname="com.hcl.tree.DataStructuresTests" time="0.001"/>
+  <testcase name="testPreOrderTraversalOfTree" classname="com.hcl.tree.DataStructuresTests" time="0.007"/>
+  <testcase name="testPostOrderTraversalOfTree" classname="com.hcl.tree.DataStructuresTests" time="0.001"/>
+  <testcase name="testInOrderTraversalOfTree" classname="com.hcl.tree.DataStructuresTests" time="0.003"/>
+  <testcase name="givenABinaryTreeWhenAddingElementsTestForThoseElements" classname="com.hcl.tree.DataStructuresTests" time="0.002"/>
 </testsuite>

@@ -117,7 +117,7 @@ class PersonTest {
     void testResourceAsStreamClasspathResolvesCorrectlyWithProperty() {
     	Properties props = new Properties();
      	try {
-			props.load(PersonTest.class.getClassLoader()
+			props.load(this.getClass().getClassLoader()
 					.getResourceAsStream("db.properties"));
 		} catch (IOException e) {
 			e.printStackTrace();
