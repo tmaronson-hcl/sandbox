@@ -4,7 +4,7 @@ public class QuickSort2 {
 
 	/*s
 	 *  General object case could be used with 
-	 *  small amount refactoring.
+	 *  small amount of refactoring.
 	 *  Purpose of partition method in quicksort is the 
 	 *  pivot point should be at correct sorted position.
 	 *  All elements less than pivot are then placed before
@@ -12,8 +12,8 @@ public class QuickSort2 {
 	 *  pivot will be placed after pivot.
 	 
 	 */
-	int partition(String[] arr, int low, int high) {
-		String pivot = arr[high];
+	int partition(Object[] arr, int low, int high) {
+		Object pivot = arr[high];
 		int i = low - 1; // index of smaller element
 		for (int j = low; j < high; j++) {
 			// If current element is smaller than or
@@ -31,13 +31,15 @@ public class QuickSort2 {
 	}
 
 	/*
-	 * The main function that implements QuickSort() arr[] --> Array to be sorted,
+	 * The main function that implements 
+	 * QuickSort() arr[] --> Array to be sorted,
 	 * low --> Starting index, high --> Ending index
 	 */
-	void sort(String[] arr, int low, int high) {
+	void sort(Object[] arr, int low, int high) {
 		if (low < high) {
 			/*
-			 * pi is partitioning index, arr[pi] is now at right place
+			 * pi is partitioning index, 
+			 * arr[pi] is now at right place
 			 */
 			int pi = partition(arr, low, high);
 
@@ -49,36 +51,49 @@ public class QuickSort2 {
 	}
 
 	/* A utility function to print array of size n */
-	void printArray(String arr[]) {
-		for (String element : arr)
+	void printArray(Object[] arr) {
+		for (Object element : arr)
 			System.out.printf("%s ", element);
 		System.out.println();
 	}
 	
 	// swap method
-	private static void swap(String[] a, int i, int j) {
+	private static void swap(Object[] a, int i, int j) {
 
-		String t = a[i];
+		Object t = a[i];
 		a[i] = a[j];
 		a[j] = t;
 	}
 	
 	// comparison method
-	private boolean less(Comparable v, Comparable w) {
-        return v.compareTo(w) <= 0;
-    }
+	private boolean less(Object arr, Object pivot) {
+		
+		// Prevent ClassCastException for String and Integer types.
+		if(pivot instanceof String)
+			return 
+				((String) arr).compareTo((String) pivot) <= 0;
+		else
+			return 
+				((Integer) arr).compareTo((Integer) pivot) <= 0;
+ 
+	}
 
 // Driver program - could be in separate class file.
 	public static void main(String args[]) {
-		//int arr[] = { 10, 7, 8, 9, 1, 5 };
-		String[] arr = {"Joe", "Sally", 
+		Integer arrInt[] = { 10, 7, 8, 9, 1, 5 };
+		String[] arrStr = {"Joe", "Sally", 
 				"Alice", "Wayne", "Sarah", "Samuel", "Blake", "Carrie"};
-		int n = arr.length;
+		int n = arrInt.length;
+		int s = arrStr.length;
 
 		QuickSort2 ob = new QuickSort2();
-		ob.sort(arr, 0, n - 1);
-		ob.printArray(arr);
+		ob.sort(arrInt, 0, n - 1);
+		ob.sort(arrStr, 0, s - 1);
+		ob.printArray(arrInt);
+		ob.printArray(arrStr);
 	}
 }
 
-/* This code is contributed by Rajat Mishra but a lot of revisions by Tom Aronson */
+/* This code is contributed by Rajat Mishra and others
+ * as QuickSort is just QuickSort, right? 
+ * but there are many revisions by Tom Aronson */
