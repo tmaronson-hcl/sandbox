@@ -1,5 +1,6 @@
 package com.hcl;
 
+import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -19,7 +20,7 @@ public class LambdasBasic {
 
 	}
 
-	private static void lambdaWork(List<Student> names) {
+	private  static void lambdaWork(List<Student> names) {
 
 		// print names in sorted order
 		names.stream()
@@ -33,7 +34,7 @@ public class LambdasBasic {
 		
 		System.out.println("Print all names");
 		names.stream()
-		     .forEach(System.out::println);
+		     .forEach((n) -> System.out.println(n));
 		
 		System.out.println("Print names starting with C");
 		names.stream()
