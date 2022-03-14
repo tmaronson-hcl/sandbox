@@ -1,12 +1,14 @@
-package com.business.treeset;
+package com.hcl;
+
+import java.util.Arrays;
 
 public class Student implements Comparable<Student> {
-	
-	int score;
-	String name;
-	
+
+	private int score;
+	private String name;
+
 	public Student(int score, String name) {
-		//super();
+		// super();
 		this.score = score;
 		this.name = name;
 	}
@@ -19,6 +21,7 @@ public class Student implements Comparable<Student> {
 		return name;
 	}
 
+	// Best practice to base equals() and hashCode() method on same fields.
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -45,23 +48,19 @@ public class Student implements Comparable<Student> {
 	}
 
 	@Override
-	public int compareTo(Student other) {
-		// could use this.score - other.score but do that in another example
-		if(this.getScore() > other.getScore()) {
-			return 1;
-		} else if(this.getScore() < other.getScore()) {
-		return -1;
-		} else {
-		return 0;
-		}
+	public int compareTo(Student other) { // could use this.score - other.score but do that in another example
+		/*
+		 * if (this.getScore() > other.getScore()) { return 1; } else if
+		 * (this.getScore() < other.getScore()) { return -1; } else { return 0; }
+		 */
+		return this.score - other.score;
+		//return name.compareTo(other.name);
 	}
 
 	@Override
 	public String toString() {
+		
 		return "Student [score=" + score + ", name=" + name + "]";
 	}
-	
-	
-	
 
 }
