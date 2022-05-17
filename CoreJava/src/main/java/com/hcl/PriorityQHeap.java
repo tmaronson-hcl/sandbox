@@ -16,9 +16,10 @@ public class PriorityQHeap {
 	private void heapify() {
 		
 		// Constructor takes a Comparator interface type
-		// We will get to lambdas -> and functinal programming later.
+		// We will get to lambdas -> and functional programming later.
 		PriorityQueue<Integer> pqMin = new PriorityQueue<>((a, b) -> a - b);
 		PriorityQueue<Integer> pqMax = new PriorityQueue<>((a, b) -> b - a);
+		PriorityQueue<Integer> pqDefault = new PriorityQueue<>(); // just use default increasing order
 		pqMin.add(27);
 		pqMin.add(21);
 		pqMin.add(4);
@@ -31,26 +32,33 @@ public class PriorityQHeap {
 		pqMin.add(42);
 		
 		pqMax.addAll(pqMin); // same values here
-		reHeapify(pqMin, pqMax);
+		pqDefault.addAll(pqMin);
+		reHeapify(pqMin, pqMax, pqDefault);
 	}
 
-	private void printResults(List<Integer> valuesAsc, List<Integer> valuesDesc) {
+	private void printResults(List<Integer> valuesAsc, List<Integer> valuesDesc, List<Integer> valuesDefault) {
 		
 		System.out.println("Increasing value:" + valuesAsc);
 		System.out.println("Decreasing value:" + valuesDesc);
+		System.out.println("Default value:" + valuesDefault);
 	}
 
-	private void reHeapify(PriorityQueue<Integer> pqMin, PriorityQueue<Integer> pqMax) {
+	private void reHeapify(PriorityQueue<Integer> pqMin, PriorityQueue<Integer> pqMax,
+			PriorityQueue<Integer> pqDefault) {
 				
 		List<Integer> valuesAsc = new ArrayList<>();
 		List<Integer> valuesDesc = new ArrayList<>();
+		List<Integer> valuesDefault = new ArrayList<>();
 		while(!pqMin.isEmpty()) {
 			valuesAsc.add(pqMin.poll());
 		}
 		while(!pqMax.isEmpty()) {
 			valuesDesc.add(pqMax.poll());
 		}
-		printResults(valuesAsc, valuesDesc);
+		while(!pqDefault.isEmpty()) {
+			valuesDefault.add(pqDefault.poll());
+		}
+		printResults(valuesAsc, valuesDesc, valuesDefault);
 	}
 
 }
