@@ -27,10 +27,17 @@ public class ExercisesI {
 		System.out.println(num);
 
 		Random random = new Random();
-		random.ints(1000000, 1, 3).boxed().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
-				.forEach((side, frequency) -> System.out.printf("%-6d%d%n", side, frequency));
-		random.ints(1000000, 1, 11).boxed().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
-				.forEach((side, frequency) -> System.out.print(String.format("%-6d%d%n", side, frequency)));
+		System.out.println("2 numbers\n");
+		random.ints(1000000, 1, 3)
+		.boxed()
+		.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
+		.forEach((side, frequency) -> System.out.printf("%-6d%d%n", side, frequency));
+		System.out.println("\n10 numbers\n");
+
+		random.ints(1000000, 1, 11)
+		.boxed()
+		.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
+		.forEach((side, frequency) -> System.out.print(String.format("%-6d%d%n", side, frequency)));
 
 		slider();
 
